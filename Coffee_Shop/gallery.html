@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Roast - Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Ensures smooth fade transitions when changing categories */
+        .tab-pane.fade {
+            transition: opacity 0.25s linear;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-brands fa-java"></i> Artisan Roast
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: #d4a373;" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header & Category Toggles (Using Bootstrap Nav Pills as filters) -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold display-5">Our Visual Story</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+                Take a look inside our cozy shop—from our ethically sourced premium beans to the fresh pastries baked at sunrise.
+            </p>
+
+            <!-- Functional CSS-only filters controlled entirely by Bootstrap 5 layout triggers -->
+            <div class="nav nav-pills justify-content-center gap-2 mt-4" id="gallery-filter-tab" role="tablist">
+                <button class="btn btn-dark active px-4 rounded-pill" id="all-tab" data-bs-toggle="tab" data-bs-target="#panel-all" type="button" role="tab" aria-controls="panel-all" aria-selected="true">All Photos</button>
+                <button class="btn btn-outline-dark px-4 rounded-pill" id="coffee-tab" data-bs-toggle="tab" data-bs-target="#panel-coffee" type="button" role="tab" aria-controls="panel-coffee" aria-selected="false">Coffee Craft</button>
+                <button class="btn btn-outline-dark px-4 rounded-pill" id="space-tab" data-bs-toggle="tab" data-bs-target="#panel-space" type="button" role="tab" aria-controls="panel-space" aria-selected="false">Our Space</button>
+                <button class="btn btn-outline-dark px-4 rounded-pill" id="treats-tab" data-bs-toggle="tab" data-bs-target="#panel-treats" type="button" role="tab" aria-controls="panel-treats" aria-selected="false">Sweet Treats</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Window Contents Wrapper -->
+    <main class="container py-5 flex-grow-1">
+        <div class="tab-content" id="gallery-panes">
+
+            <!-- FILTER WINDOW PANE: ALL PHOTOS -->
+            <div class="tab-pane fade show active" id="panel-all" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                <div class="row g-4">
+                    <!-- Item 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Espresso_extraction.png" alt="Espresso extraction" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-mug-hot fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">The Perfect Pour</h5><small class="text-light text-opacity-75">Precision micro-extracted shots</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Cozy_seating.png" alt="Cozy seating area" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-couch fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Cozy Nooks</h5><small class="text-light text-opacity-75">Your home away from home</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Barista_creating.png" alt="Barista creating pouring latte art" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-heart fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Barista Craft</h5><small class="text-light text-opacity-75">Hand-poured with passion</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Fresh_croissants.png" alt="Fresh croissants on trays" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-bread-slice fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Morning Bake</h5><small class="text-light text-opacity-75">Oven-fresh artisan treats</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/V60_Pour.png" alt="V60 Pour over process" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-droplet fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Slow Drip Brew</h5><small class="text-light text-opacity-75">Highlighting single-origin profiles</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/People_gathering.png" alt="People gathering over coffee" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-users fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Artisan Community</h5><small class="text-light text-opacity-75">Where good conversations spark</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER WINDOW PANE: COFFEE CRAFT -->
+            <div class="tab-pane fade" id="panel-coffee" role="tabpanel" aria-labelledby="coffee-tab" tabindex="0">
+                <div class="row g-4">
+                    <!-- Item 1 (Espresso) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Espresso_extraction.png" alt="Espresso extraction" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-mug-hot fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">The Perfect Pour</h5><small class="text-light text-opacity-75">Precision micro-extracted shots</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 3 (Latte Art) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Barista_creating.png" alt="Barista creating pouring latte art" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-heart fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Barista Craft</h5><small class="text-light text-opacity-75">Hand-poured with passion</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 5 (Pour Over) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/V60_Pour.png" alt="V60 Pour over process" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-droplet fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Slow Drip Brew</h5><small class="text-light text-opacity-75">Highlighting single-origin profiles</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER WINDOW PANE: OUR SPACE -->
+            <div class="tab-pane fade" id="panel-space" role="tabpanel" aria-labelledby="space-tab" tabindex="0">
+                <div class="row g-4">
+                    <!-- Item 2 (Interior) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Cozy_seating.png" alt="Cozy seating area" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-couch fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Cozy Nooks</h5><small class="text-light text-opacity-75">Your home away from home</small></div></div>
+                        </div>
+                    </div>
+                    <!-- Item 6 (Community) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/People_gathering.png" alt="People gathering over coffee" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-users fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Artisan Community</h5><small class="text-light text-opacity-75">Where good conversations spark</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER WINDOW PANE: SWEET TREATS -->
+            <div class="tab-pane fade" id="panel-treats" role="tabpanel" aria-labelledby="treats-tab" tabindex="0">
+                <div class="row g-4">
+                    <!-- Item 4 (Croissants) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item shadow-sm rounded">
+                            <img src="./images/Fresh_croissants.png" alt="Fresh croissants on trays" class="gallery-img">
+                            <div class="gallery-overlay"><div class="text-center text-white p-3"><i class="fa-solid fa-bread-slice fs-2 mb-2 text-warning"></i><h5 class="fw-bold m-0">Morning Bake</h5><small class="text-light text-opacity-75">Oven-fresh artisan treats</small></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Social Banner -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h3 class="fw-bold mb-2">Share Your #ArtisanRoast Moments</h3>
+            <p class="text-muted mb-4">Snap a picture during your visit and tag us to be featured on our board!</p>
+            <a href="https://www.instagram.com/kkun783?igsh=MTY3a2cyZnFwZHlxdw==" class="btn btn-warning fw-bold text-dark px-4 py-2">
+                <i class="fa-brands fa-instagram me-2"></i> Follow Our Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 border-top border-secondary mt-auto">
+        <p class="mb-0">
+            © 2026 Artisan Roast Coffee Shop
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS (Required layout trigger file for tab structures) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
