@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Roast - Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-brands fa-java"></i> Artisan Roast
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #d4a373" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="reviews.html">Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="reservation.html">Reservation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="about.html">About Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Page Header & Bootstrap Nav Tabs -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+
+            <h1 class="fw-bold">Our Menu</h1>
+
+            <p class="lead text-muted">
+                Freshly prepared drinks and snacks made with premium ingredients.
+            </p>
+
+
+            <div class="nav nav-pills justify-content-center mt-4" id="menu-tab" role="tablist">
+                <button class="nav-link active btn bg-dark text-white mx-1 px-4 py-2" id="all-tab" data-bs-toggle="tab"
+                    data-bs-target="#all-menu" type="button" role="tab">All</button>
+                <button class="nav-link btn bg-dark text-white mx-1 px-4 py-2" id="coffee-tab" data-bs-toggle="tab"
+                    data-bs-target="#coffee" type="button" role="tab">Coffee</button>
+                <button class="nav-link btn bg-secondary text-white mx-1 px-4 py-2" id="tea-tab" data-bs-toggle="tab"
+                    data-bs-target="#tea" type="button" role="tab">Tea</button>
+                <button class="nav-link btn bg-warning text-dark mx-1 px-4 py-2" id="desserts-tab" data-bs-toggle="tab"
+                    data-bs-target="#desserts" type="button" role="tab">Desserts</button>
+                <button class="nav-link btn bg-success text-white mx-1 px-4 py-2" id="bakery-tab" data-bs-toggle="tab"
+                    data-bs-target="#bakery" type="button" role="tab">Bakery</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Menu Sections Content Wrapper -->
+    <section class="container py-5">
+        <div class="tab-content" id="menu-tabContent">
+
+            <!-- ================= ALL MENU PANEL ================= -->
+            <div class="tab-pane fade show active" id="all-menu" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Espresso -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/espresso.png" class="card-img-top" alt="Espresso">
+                            <div class="card-body">
+                                <h4 class="card-title">Espresso</h4>
+                                <p class="card-text">Strong and rich coffee shot made from premium roasted beans.</p>
+                                <h5 class="text-brown">$3.50</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caramel Latte -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/latte.png" class="card-img-top" alt="Latte">
+                            <div class="card-body">
+                                <h4 class="card-title">Caramel Latte</h4>
+                                <p class="card-text">Smooth espresso blended with steamed milk and caramel.</p>
+                                <h5 class="text-brown">$4.50</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cappuccino -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/cappuccino.png" class="card-img-top" alt="Cappuccino">
+                            <div class="card-body">
+                                <h4 class="card-title">Cappuccino</h4>
+                                <p class="card-text">Classic Italian coffee topped with creamy milk foam.</p>
+                                <h5 class="text-brown">$4.75</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mocha -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/mocha.png" class="card-img-top" alt="Mocha">
+                            <div class="card-body">
+                                <h4 class="card-title">Mocha</h4>
+                                <p class="card-text">Espresso mixed with chocolate and steamed milk.</p>
+                                <h5 class="text-brown">$5.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Americano -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/americano.png" class="card-img-top" alt="Americano">
+                            <div class="card-body">
+                                <h4 class="card-title">Americano</h4>
+                                <p class="card-text">Espresso diluted with hot water for a smooth flavor.</p>
+                                <h5 class="text-brown">$3.75</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cold Brew -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/coldbrew.png" class="card-img-top" alt="Cold Brew">
+                            <div class="card-body">
+                                <h4 class="card-title">Cold Brew</h4>
+                                <p class="card-text">Slow-steeped coffee served chilled and refreshing.</p>
+                                <h5 class="text-brown">$4.25</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Green Tea -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/green-tea.png" class="card-img-top" alt="Green Tea">
+                            <div class="card-body">
+                                <h5>Green Tea</h5>
+                                <p>Fresh organic green tea with natural antioxidants.</p>
+                                <h6>$3.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sea Salt Caramel Latte -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/signature-latte.png" class="card-img-top" alt="Sea Salt Latte">
+                            <div class="card-body">
+                                <h5>Sea Salt Caramel Latte</h5>
+                                <p>Rich espresso with smooth micro-foam and a savory-sweet caramel drizzle.</p>
+                                <h6>$5.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Essiac Tea -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/tea.png" class="card-img-top" alt="Essiac Tea">
+                            <div class="card-body">
+                                <h5>Essiac Tea</h5>
+                                <p>Benefits Include Fighting Cancer.</p>
+                                <h6>$1.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Almond Praline Croissant -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/signature-croissant.png" class="card-img-top" alt="Almond Croissant">
+                            <div class="card-body">
+                                <h5>Almond Praline Croissant</h5>
+                                <p>Flaky, buttery layers filled with sweet almond paste and topped with toasted flakes.
+                                </p>
+                                <h6>$4.25</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Butter Croissant -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/croissant.png" class="card-img-top" alt="Butter Croissant">
+                            <div class="card-body">
+                                <h5>Butter Croissant</h5>
+                                <p>Freshly baked every morning.</p>
+                                <h6>$2.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beef Burger -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/burger.png" class="card-img-top" alt="Beef Burger">
+                            <div class="card-body">
+                                <h5>Beef Burger</h5>
+                                <p>Piled high with your favorite toppings. Check out all my tips for perfect burgers!
+                                </p>
+                                <h6>$2.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= COFFEE ONLY PANEL ================= -->
+            <div class="tab-pane fade" id="coffee" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Espresso -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/espresso.png" class="card-img-top" alt="Espresso">
+                            <div class="card-body">
+                                <h4 class="card-title">Espresso</h4>
+                                <p class="card-text">Strong and rich coffee shot made from premium roasted beans.</p>
+                                <h5 class="text-brown">$3.50</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Caramel Latte -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/latte.png" class="card-img-top" alt="Latte">
+                            <div class="card-body">
+                                <h4 class="card-title">Caramel Latte</h4>
+                                <p class="card-text">Smooth espresso blended with steamed milk and caramel.</p>
+                                <h5 class="text-brown">$4.50</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cappuccino -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/cappuccino.png" class="card-img-top" alt="Cappuccino">
+                            <div class="card-body">
+                                <h4 class="card-title">Cappuccino</h4>
+                                <p class="card-text">Classic Italian coffee topped with creamy milk foam.</p>
+                                <h5 class="text-brown">$4.75</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mocha -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/mocha.png" class="card-img-top" alt="Mocha">
+                            <div class="card-body">
+                                <h4 class="card-title">Mocha</h4>
+                                <p class="card-text">Espresso mixed with chocolate and steamed milk.</p>
+                                <h5 class="text-brown">$5.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Americano -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/americano.png" class="card-img-top" alt="Americano">
+                            <div class="card-body">
+                                <h4 class="card-title">Americano</h4>
+                                <p class="card-text">Espresso diluted with hot water for a smooth flavor.</p>
+                                <h5 class="text-brown">$3.75</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cold Brew -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="images/coldbrew.png" class="card-img-top" alt="Cold Brew">
+                            <div class="card-body">
+                                <h4 class="card-title">Cold Brew</h4>
+                                <p class="card-text">Slow-steeped coffee served chilled and refreshing.</p>
+                                <h5 class="text-brown">$4.25</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sea Salt Caramel Latte -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/signature-latte.png" class="card-img-top" alt="Sea Salt Latte">
+                            <div class="card-body">
+                                <h5>Sea Salt Caramel Latte</h5>
+                                <p>Rich espresso with smooth micro-foam and a savory-sweet caramel drizzle.</p>
+                                <h6>$5.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= TEA ONLY PANEL ================= -->
+            <div class="tab-pane fade" id="tea" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Green Tea -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/green-tea.png" class="card-img-top" alt="Green Tea">
+                            <div class="card-body">
+                                <h5>Green Tea</h5>
+                                <p>Fresh organic green tea with natural antioxidants.</p>
+                                <h6>$3.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Essiac Tea -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/tea.png" class="card-img-top" alt="Essiac Tea">
+                            <div class="card-body">
+                                <h5>Essiac Tea</h5>
+                                <p>Benefits Include Fighting Cancer.</p>
+                                <h6>$1.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DESSERTS ONLY PANEL ================= -->
+            <div class="tab-pane fade" id="desserts" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Beef Burger -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/burger.png" class="card-img-top" alt="Beef Burger">
+                            <div class="card-body">
+                                <h5>Beef Burger</h5>
+                                <p>Piled high with your favorite toppings. Check out all my tips for perfect burgers!
+                                </p>
+                                <h6>$2.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= BAKERY ONLY PANEL ================= -->
+            <div class="tab-pane fade" id="bakery" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Almond Praline Croissant -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/signature-croissant.png" class="card-img-top" alt="Almond Croissant">
+                            <div class="card-body">
+                                <h5>Almond Praline Croissant</h5>
+                                <p>Flaky, buttery layers filled with sweet almond paste and topped with toasted flakes.
+                                </p>
+                                <h6>$4.25</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Butter Croissant -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="./images/croissant.png" class="card-img-top" alt="Butter Croissant">
+                            <div class="card-body">
+                                <h5>Butter Croissant</h5>
+                                <p>Freshly baked every morning.</p>
+                                <h6>$2.50</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Spotlight Showcase Card -->
+        <div class="p-4 p-lg-5 bg-dark text-white rounded shadow mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">Customer Favorite</h2>
+                    <p class="lead">Our signature Caramel Latte is crafted with premium espresso, steamed milk, and rich
+                        caramel syrup.</p>
+                    <p>Loved by hundreds of customers every week, it delivers the perfect balance of sweetness and
+                        coffee flavor.</p>
+                    <h4 class="text-warning"><i class="fa-solid fa-star"></i> Most Ordered Drink</h4>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="./images/popular-latte.png" alt="Caramel Latte" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Coffee Bean Origins -->
+        <div class="container py-5 mt-4">
+            <h2 class="text-center fw-bold mb-5">Coffee Bean Origins</h2>
+            <div class="row text-center align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./images/brazil-beans.png" alt="Brazil Coffee Beans"
+                        class="img-fluid mb-3 rounded-circle shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4>🇧🇷 Brazil</h4>
+                    <p>Rich and nutty flavor profile.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./images/colombia-beans.png" alt="Colombia Coffee Beans"
+                        class="img-fluid mb-3 rounded-circle shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4>🇨🇴 Colombia</h4>
+                    <p>Balanced sweetness and aroma.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="./images/ethiopia-beans.png" alt="Ethiopia Coffee Beans"
+                        class="img-fluid mb-3 rounded-circle shadow"
+                        style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4>🇪🇹 Ethiopia</h4>
+                    <p>Fruity and floral tasting notes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="container py-5">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <h3 class="fw-bold">Opening Hours</h3>
+                <hr>
+                <p>Monday - Friday : 7:00 AM - 9:00 PM</p>
+                <p>Saturday : 8:00 AM - 10:00 PM</p>
+                <p>Sunday : 8:00 AM - 8:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h2>20+</h2>
+                    <p>Coffee Drinks</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>15+</h2>
+                    <p>Desserts</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>500+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>4.9<i class="fa-solid fa-star text-dark fs-4 px-2"></i></h2>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p class="mb-0">© 2026 Artisan Roast Coffee Shop</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (Required for built-in Bootstrap Tabs data attributes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
