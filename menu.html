@@ -75,27 +75,42 @@
     <!-- Page Header & Bootstrap Nav Tabs -->
     <section class="bg-light py-5">
         <div class="container text-center">
-
+    
             <h1 class="fw-bold">Our Menu</h1>
-
+    
             <p class="lead text-muted">
                 Freshly prepared drinks and snacks made with premium ingredients.
             </p>
-
-
-            <div class="nav nav-pills justify-content-center mt-4" id="menu-tab" role="tablist">
-                <button class="nav-link active btn bg-dark text-white mx-1 px-4 py-2" id="all-tab" data-bs-toggle="tab"
-                    data-bs-target="#all-menu" type="button" role="tab">All</button>
-                <button class="nav-link btn bg-dark text-white mx-1 px-4 py-2" id="coffee-tab" data-bs-toggle="tab"
-                    data-bs-target="#coffee" type="button" role="tab">Coffee</button>
-                <button class="nav-link btn bg-secondary text-white mx-1 px-4 py-2" id="tea-tab" data-bs-toggle="tab"
-                    data-bs-target="#tea" type="button" role="tab">Tea</button>
-                <button class="nav-link btn bg-warning text-dark mx-1 px-4 py-2" id="desserts-tab" data-bs-toggle="tab"
-                    data-bs-target="#desserts" type="button" role="tab">Desserts</button>
-                <button class="nav-link btn bg-success text-white mx-1 px-4 py-2" id="bakery-tab" data-bs-toggle="tab"
-                    data-bs-target="#bakery" type="button" role="tab">Bakery</button>
+    
+            <div class="nav nav-pills justify-content-center gap-2 mt-4" id="menu-tab" role="tablist">
+                
+                <button class="nav-link active btn btn-dark px-4 py-2 m-1 rounded-pill" id="all-tab" data-bs-toggle="tab"
+                    data-bs-target="#all-menu" type="button" role="tab" aria-controls="all-menu" aria-selected="true">
+                    All
+                </button>
+                
+                <button class="nav-link btn btn-outline-dark px-4 py-2 m-1 rounded-pill" id="coffee-tab" data-bs-toggle="tab"
+                    data-bs-target="#coffee" type="button" role="tab" aria-controls="coffee" aria-selected="false">
+                    Coffee
+                </button>
+                
+                <button class="nav-link btn btn-outline-dark px-4 py-2 m-1 rounded-pill" id="tea-tab" data-bs-toggle="tab"
+                    data-bs-target="#tea" type="button" role="tab" aria-controls="tea" aria-selected="false">
+                    Tea
+                </button>
+                
+                <button class="nav-link btn btn-outline-dark px-4 py-2 m-1 rounded-pill" id="desserts-tab" data-bs-toggle="tab"
+                    data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">
+                    Desserts
+                </button>
+                
+                <button class="nav-link btn btn-outline-dark px-4 py-2 m-1 rounded-pill" id="bakery-tab" data-bs-toggle="tab"
+                    data-bs-target="#bakery" type="button" role="tab" aria-controls="bakery" aria-selected="false">
+                    Bakery
+                </button>
+                
             </div>
-
+    
         </div>
     </section>
 
